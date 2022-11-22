@@ -116,4 +116,31 @@ public class SchoolSystem {
 			this.schoolsystem=schoolsystem;
 		}
 	}
+public boolean delStudent(int stuType) {
+		if(stuType==-1) {
+			if(array1.size()!=0) {
+				array1.remove(array1.size()-1);
+				return true;
+			}
+			else
+				return false;
+		}
+		else if(stuType==-2) {
+			if(array2.size()!=0) {
+				array2.remove(array2.size()-1);
+				return true;
+			}
+			else
+				return false;
+		}
+		else if(stuType==-3) {
+			if(array3.size()!=0) {
+				array3.remove(array3.size()-1);
+				return true;
+			}
+			else
+				return false;
+		}
+		return false;
+	}
 }
