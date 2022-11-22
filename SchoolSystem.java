@@ -96,6 +96,7 @@ public class SchoolSystem {
         a.print(list);
         
 }
+
 	public class Student{
 		String name,schoolsystem;
 		public void setName(String name) {
