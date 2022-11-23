@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.ArrayList;//修改
 import java.util.Scanner;
 public class SchoolSystem {
 	int big,medium,small;
