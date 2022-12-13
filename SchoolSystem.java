@@ -90,6 +90,7 @@ public class SchoolSystem {
 			System.out.print("第"+m+"个学生，请输入要查询的班级(1：大班2：中班3：小班)");
 			int j=in.nextInt();
 			a.addStudent(j);
+                                                System.out.println("进入下一个");
 		}
         System.out.println("班级学生信息");
         list=a.array;
@@ -117,7 +118,7 @@ public class SchoolSystem {
 		}
 	}
 public boolean delStudent(int stuType) {
-		if(stuType==-1) {
+		if(stuType==1) {
 			if(array1.size()!=0) {
 				array1.remove(array1.size()-1);
 				return true;
@@ -125,7 +126,7 @@ public boolean delStudent(int stuType) {
 			else
 				return false;
 		}
-		else if(stuType==-2) {
+		else if(stuType==2) {
 			if(array2.size()!=0) {
 				array2.remove(array2.size()-1);
 				return true;
@@ -133,7 +134,7 @@ public boolean delStudent(int stuType) {
 			else
 				return false;
 		}
-		else if(stuType==-3) {
+		else if(stuType==3) {
 			if(array3.size()!=0) {
 				array3.remove(array3.size()-1);
 				return true;
